@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>全屏切换（pc）</title>
+	<link rel="stylesheet" href="css/fullpage.css">
+</head>
+<body>
+	<!-- 总盒子 -->
+	<div id="container">
+		<!-- 放置内容的总盒子 -->
+		<div class="sections">
+			<!-- 单个页面盒子 -->
+			<div class="section" id="section0">
+				<p>this is page0</p>
+			</div>
+			<div class="section" id="section1">
+				<p>this is page1</p>
+			</div>
+			<div class="section" id="section2">
+				<p>this is page2</p>
+			</div>
+			<div class="section" id="section3">
+				<p>this is page3</p>
+			</div>
+			<div class="section" id="section4">
+				<p>this is page4</p>
+			</div>
+		</div>
+		<!-- 节点盒子 -->
+		<div id="dots">	
+		</div>
+	</div>
+</body>
+</html>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/fullpage.js"></script>
+<script>
+	$(function(){
+		var selector={
+			parentBox:$("#container"),
+			fullBox:$("#container .sections"),
+			pageBox:$("#container .section"),
+			dotBox:$("#container #dots")
+		};
+		var org={
+			direction:"horizonal"
+		}
+		var eg=new fullpage();
+		eg.init(selector,org);
+	})
+</script>

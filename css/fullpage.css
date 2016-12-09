@@ -1,0 +1,85 @@
+/*css初始化*/
+*{padding:0;margin:0;}
+li{list-style: none;}
+/*内容全屏处理*/
+body,html,#container,.sections,.section{
+	width: 100%;
+	height: 100%;
+}
+/*分页面背景图*/
+#section0{
+	background: url(../img/0.jpg);
+}
+#section1{
+	background: url(../img/1.jpg);
+}
+#section2{
+	background: url(../img/2.jpg);
+}
+#section3{
+	background: url(../img/3.jpg);
+}
+#section4{
+	background: url(../img/4.jpg);
+}
+#section0,#section1,#section2,#section3,#section4{
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+/*总盒子*/
+#container{
+	position: relative;
+	overflow: hidden;
+}
+/*内容总盒子默认*/
+.sections{
+	position: relative;
+}
+/*内容盒子横向*/
+.section-left{
+	float: left;
+}
+/*内容盒子内容*/
+.section p{
+	text-align: center;
+	font-size: 22px;
+	font-family: 'microsoft yahei';
+	font-weight: 700;
+	color: #fff;
+}
+/*节点盒子默认*/
+#dots{
+	position: absolute;
+}
+/*节点盒子竖向*/
+.dots-vertical{
+	position: absolute;
+	right:12px;
+	top:50%;
+	width: 10px;
+	margin-top: 0;
+}
+/*节点盒子横向*/
+.dots-herizonal{
+	position: absolute;
+	bottom:12px;
+	left:50%;
+	height: 10px;
+	margin-left: 0;
+}
+/*每个节点*/
+#dots .dot{
+	width: 9px;
+	height: 9px;
+	background-color: #fff;
+	background-clip: content-box;
+	border-radius: 50%;
+	display: inline-block;
+	margin:3px;
+	cursor: pointer;
+	border:3px solid transparent;
+}
+#dots .dot-active,#dots .dot:hover{
+	border-color: #fff;
+	background-color: transparent;
+}
