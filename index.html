@@ -34,7 +34,7 @@
 </body>
 </html>
 <script src="js/jquery-1.8.3.min.js"></script>
-<script src="js/fullpage.js"></script>
+<script src="js/jquery.fullpage.js"></script>
 <script>
 	$(function(){
 		var selector={
@@ -44,9 +44,12 @@
 			dotBox:$("#container #dots")
 		};
 		var org={
-			direction:"horizonal"
+			direction:"hor"
 		}
-		var eg=new fullpage();
-		eg.init(selector,org);
+		//调用
+		//参数1：选择器对象
+		//参数2：速度，可选
+		// 参数3：方向，可选
+		$.fullPage(selector);
 	})
 </script>

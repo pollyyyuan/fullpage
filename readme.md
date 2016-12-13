@@ -25,4 +25,6 @@
 	-  使用
 		-  fullpage对象实例化
 		-  init()方法，代入以上接口做参数
+####standard
+-  使用jquery插件方式封装
 	
