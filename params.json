@@ -1,0 +1,6 @@
+{
+  "name": "Fullpage-pol",
+  "tagline": "Fullpage-pol",
+  "body": "##fullpage\r\n***\r\n####init simple\r\n-  凭借自己现有知识，把效果做出来\r\n-  pc端的全屏切换实现\r\n-  功能如下：\r\n\t- 整个页面横向或竖向切换\r\n\t- 使用滚轮，键盘上下左右按键以及点击节点切换\r\n-  html结构\r\n\t-  #container代表整个盒子\r\n\t   -  .sections代表装内容的盒子\r\n          -  .section代表一个页面\r\n       -  #dots代表装节点的盒子\r\n          -  span代表单个节点\r\n-  css结构\r\n\t-  竖向盒子（默认）\r\n\t\t-  .dot-horizonal节点\r\n\t-  横向盒子\r\n\t\t-  .section-left页面\r\n\t\t-  .dot-vertical节点\r\n-  fullpage对象\r\n\t-  接口\r\n\t\t-  seclector选择器对象\r\n\t\t-  org选择参数对象（动画速度，横向/竖向）\r\n\t-  使用\r\n\t\t-  fullpage对象实例化\r\n\t\t-  init()方法，代入以上接口做参数\r\n\t\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
