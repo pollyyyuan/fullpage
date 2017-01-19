@@ -1,0 +1,59 @@
+/*css初始化*/
+body,html,div,img,p{padding:0;margin:0;}
+li{list-style: none;}
+@mixin full($val:100%){
+	width: $val;
+	height: $val;
+}
+body,html,#container,.sections,.section{
+	@include full;
+}
+$dotMargin:12px;
+$dotBoxSize:12px;
+$dotSize:9px;
+#container{
+	position: relative;
+	overflow: hidden;
+	.sections{
+		position: relative;
+		@for $i from 0 to 5{
+			#section#{$i}{
+				background: url(../img/#{$i}.jpg);
+				background-repeat: no-repeat;
+				background-size: 100% 100%;
+			}
+		}
+		.section-left{
+			float: left;
+		}
+	}
+	#dots{
+		position: absolute;
+		.dot{
+			@include full($dotSize);
+			background-color: #fff;
+			background-clip: content-box;
+			border-radius: 50%;
+			display: inline-block;
+			margin:$dotBoxSize - $dotSize;
+			cursor: pointer;
+			border:$dotBoxSize - $dotSize solid transparent;
+			&:hover{
+			border-color: #fff;
+			background-color: transparent;
+			}
+		}
+		.dot-active{
+			@extend .dot:hover;
+		}
+
+	}
+	@import '../../../frame/dot.scss';
+	.dots-vertical{
+		@include dotsDirection(right,top,width);
+	}
+	.dots-herizonal{
+		@include dotsDirection;
+	}
+
+}

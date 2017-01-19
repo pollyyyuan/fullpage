@@ -37,19 +37,19 @@
 <script src="js/jquery.fullpage.js"></script>
 <script>
 	$(function(){
-		var selector={
-			parentBox:$("#container"),
-			fullBox:$("#container .sections"),
-			pageBox:$("#container .section"),
-			dotBox:$("#container #dots")
-		};
-		var org={
-			direction:"hor"
-		}
+		// var selector={
+		// 	fullBox:$("#container .sections"),
+		// 	pageBox:$("#container .section"),
+		// 	dotBox:$("#container #dots")
+		// };
+		// var org={
+		// 	direction:"hor"
+		// }
 		//调用
 		//参数1：选择器对象
 		//参数2：速度，可选
 		// 参数3：方向，可选
-		$.fullPage(selector);
+		//$.fullPage(selector,500,org);
+		$('#container').fullpage();
 	})
 </script>
